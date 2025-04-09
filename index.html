@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Great Gheetan Empire</title>
+
+  <!-- Link to the Manifest File -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Link to the stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Icons for the web app -->
+  <link rel="icon" href="peHomO1P.png" sizes="192x192">
+  <link rel="icon" href="peHomO1P.png" sizes="512x512">
+</head>
+<body>
+
+  <header>
+    <img src="peHomO1P.png" alt="Great Gheetan Empire Logo" style="width: 50px; height: auto;">
+    <h1>Welcome to the Great Gheetan Empire</h1>
+  </header>
+
+  <!-- Your website content here -->
+  <main>
+    <h2>About</h2>
+    <p>The Great Gheetan Empire is a proud and sovereign micronation...</p>
+    <!-- Add more content as you need -->
+
+    <button><a href="/about.html">About</a></button>
+    <button><a href="/history.html">History</a></button>
+    <button><a href="/medals.html">Medals</a></button>
+    <button><a href="/news.html">News</a></button>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Great Gheetan Empire</p>
+  </footer>
+
+  <!-- Register the Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js').then((registration) => {
+          console.log('Service Worker registered with scope: ', registration.scope);
+        }).catch((error) => {
+          console.log('Service Worker registration failed: ', error);
+        });
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0099ff; /* light blue */
+    color: #006600; /* green */
+  }
+  
+  header {
+    background-color: #006600; /* dark green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  /* Style for the links */
+a {
+    font-size: 24px;  /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Green color */
+    padding: 10px;  /* Add some padding for spacing */
+    display: inline-block;  /* Make sure it behaves like a block */
+  }
+  
+  a:hover {
+    color: #b3e0ff; /* Change color on hover to light blue */
+    background-color: #006600; /* Dark green background on hover */
+    border-radius: 5px; /* Round the corners of the hover background */
+  }
+  
