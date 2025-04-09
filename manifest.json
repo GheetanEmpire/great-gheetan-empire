@@ -1,3 +1,5 @@
+
+  {
     "name": "Great Gheetan Empire",
     "short_name": "Gheetan Empire",
     "description": "Explore the Great Gheetan Empire!",
@@ -7,14 +9,15 @@
     "theme_color": "#4CAF50",
     "icons": [
       {
-        "src": "peHomO1P.png",
-        "sizes": "192x192",
+      "src": "images/peHomO1P.png",
+         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "peHomO1P.png",
+        "src": "images/peHomO1P.png",
         "sizes": "512x512",
         "type": "image/png"
       }
     ]
   }
+  
