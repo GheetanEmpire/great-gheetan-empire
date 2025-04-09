@@ -13,6 +13,7 @@ self.addEventListener('install', (e) => {
         'peHomO1P.png',
         'peHomO1P-192x192.png',
         'peHomO1P-512x512.png',
+        'offline.html',
       ]);
     })
   );
@@ -21,7 +22,11 @@ self.addEventListener('install', (e) => {
 self.addEventListener('fetch', (e) => {
   e.respondWith(
     caches.match(e.request).then((response) => {
-      return response || fetch(e.request);
+      // If the file is cached, return it
+      return response || fetch(e.request).catch(() => {
+        // If fetch fails (e.g., no internet), serve the offline page
+        return caches.match('offline.html');
+      });
     })
   );
 });
